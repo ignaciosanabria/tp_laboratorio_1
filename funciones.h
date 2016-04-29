@@ -1,67 +1,30 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
+typedef struct {
 
+    char nombre[50];
+    int edad;
+    int estado;
+    long int dni;
 
-
-int Sumar(x,y)
-{
- int suma;
- suma=x+y;
-  return suma;
-}
-
-int Restar(x,y)
-{
-   int resta;
-   resta=x-y;
-   return resta;
-}
-
-int Multiplicacion(x,y)
-{
-   int multiplica;
-   multiplica=x*y;
-   return multiplica;
-}
-void Division(x,y)
-{
-    float A=x, B=y, dividir;
-    if(B==0)
-    {
-        printf("ERROR. La division por cero no es posible. Modifique el valor B");
-    }
-    else
-    {
-    dividir=A/B;
-    printf("La division de los dos operandos es: %.2f",dividir);
-    }
-}
-
-double Factorial(x)
-{
-   int i=x;
-   double res=1;
-   if(x<0)
-   {
-   while(i!=0)
-   {
-       res=res*i;
-       i++;
-   }
-   }
-   else
-   {
-     while(i!=0)
-     {
-         res=res*i;
-         i--;
-     }
-   }
-   return res;
-}
-
-
-
-
+}EPersona;
+/**
+ * Obtiene el primer indice libre del array.
+ * @param lista el array se pasa como parametro.
+ * @return el primer indice disponible
+ */
+ int obtenerEspacioLibre(EPersona x[]);
+/**
+ * Obtiene el indice que coincide con el dni pasado por parametro.
+ * @param lista el array se pasa como parametro.
+ * @param dni el dni a ser buscado en el array.
+ * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
+ */
+int buscarPorDni(EPersona x[], long int dni);
+void Altas(EPersona x[]);//FUNCION DE AGREGAR A LOS EMPLEADOS
+void Eliminar(EPersona x[]);//FUNCION DE ELIMINAR A UN EMPLEADO Y SUS DATOS SEGUN SU DNI
+void Mostrar(EPersona x[]);//FUNCION DE MOSTRAR ALFABETICAMENTE A LOS EMPLEADOS
+int val_int(int, int, int); //FUNCION DE VALIDACION PARA LA EDAD Y DNI
+void Grafico(EPersona x[]);//FUNCION DEL GRAFICO DE LAS EDADES
 
 #endif // FUNCIONES_H_INCLUDED
