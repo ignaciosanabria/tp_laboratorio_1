@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1464394644 source:e:\nacho\utn avellaneda\cursada 2016\trabajos practicos\trabajo practico 3\tp_3_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+
+1464388348 e:\nacho\utn avellaneda\cursada 2016\trabajos practicos\trabajo practico 3\tp_3_cascara\funciones.h
+
+1464379172 source:e:\nacho\utn avellaneda\cursada 2016\trabajos practicos\trabajo practico 3\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<windows.h>
+
